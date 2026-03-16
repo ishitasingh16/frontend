@@ -51,7 +51,7 @@ export const dances: Dance[] = [
     templeTraitions: "Deeply connected to the Jagannath temple tradition of Puri, Odissi was performed as a sacred offering. The Konark Sun Temple and Mukteshwar Temple feature extensive dance sculptures that form the basis of many Odissi poses.",
     philosophy: "Odissi embodies the Tribhangi — a three-fold bending of the body symbolizing the union of the physical, mental, and spiritual realms. It draws heavily from Jayadeva's Gita Govinda, exploring devotion and divine love.",
     famousMudras: ["Chandrakala", "Ardhachandra", "Mushti", "Katakamukha"],
-    imageUrl: "/placeholder.svg",
+    imageUrl: odissiImg,
   },
   {
     id: "kathakali",
