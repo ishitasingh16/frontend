@@ -1,3 +1,8 @@
+import bharatanatyamImg from "@/assets/bharatanatyam.jpg";
+import kathakImg from "@/assets/kathak.jpg";
+import odissiImg from "@/assets/odissi.jpg";
+import kathakaliImg from "@/assets/kathakali.jpg";
+
 export interface Dance {
   id: string;
   name: string;
