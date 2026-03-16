@@ -63,6 +63,6 @@ export const dances: Dance[] = [
     templeTraitions: "While Kathakali is performed both in temples and secular settings, it has strong connections to Kerala's temple festivals. Performances traditionally begin at dusk and continue through the night, creating an immersive ritualistic experience.",
     philosophy: "Kathakali is built on the Natyashastra's rasa theory, with particular emphasis on the heroic (Vira) and furious (Raudra) sentiments. The elaborate makeup system (Vesham) categorizes characters by their moral nature — green for noble, red for evil, and black for demons.",
     famousMudras: ["Hamsapaksha", "Samdamsha", "Mushti", "Sikhara"],
-    imageUrl: "/placeholder.svg",
+    imageUrl: kathakaliImg,
   },
 ];
