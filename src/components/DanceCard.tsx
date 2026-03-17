@@ -15,26 +15,26 @@ const DanceCard = ({ dance, index = 0 }: DanceCardProps) => {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div className="group rounded-xl border border-gold-subtle bg-card p-5 transition-all hover-gold-glow">
+      <div className="dance-card">
         <div className="aspect-[4/3] overflow-hidden rounded-lg bg-muted">
           <img
             src={dance.imageUrl}
             alt={dance.name}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="h-full w-full object-cover transition-transform duration-500"
           />
         </div>
 
         <div className="mt-4">
-          <h3 className="font-display text-xl font-semibold text-foreground">
+          <h3 className="font-display text-xl font-semibold text-primary-text">
             {dance.name}
           </h3>
-          <p className="mt-1 text-xs text-primary font-medium">{dance.origin}</p>
-          <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
+          <p className="mt-1 text-xs text-saffron font-medium">{dance.origin}</p>
+          <p className="mt-2 text-sm text-secondary-text line-clamp-2">
             {dance.shortDescription}
           </p>
           <Link
             to={`/dances/${dance.id}`}
-            className="mt-4 inline-flex text-sm font-medium text-primary transition-colors hover:text-gold-light"
+            className="mt-4 inline-flex text-sm font-medium text-saffron transition-colors hover:text-antique-gold"
           >
             Explore →
           </Link>

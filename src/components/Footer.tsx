@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-gold-subtle py-8">
-      <div className="container mx-auto px-6 text-center">
-        <p className="font-display text-lg font-semibold text-gradient-gold">NatyaVeda</p>
-        <p className="mt-2 text-sm text-muted-foreground">
+    <footer>
+      <div className="container mx-auto max-w-1200 px-6">
+        <p className="font-display text-lg font-semibold text-main-bg mb-2">NatyaVeda</p>
+        <p className="text-sm">
           © {new Date().getFullYear()} NatyaVeda. Preserving the art of Indian classical dance.
         </p>
       </div>

@@ -14,9 +14,9 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gold-subtle bg-background/80 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <Link to="/" className="font-display text-2xl font-bold text-gradient-gold">
+        <Link to="/" className="font-display text-2xl font-bold text-temple-brown">
           NatyaVeda
         </Link>
 
@@ -26,8 +26,10 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+              className={`text-sm font-medium transition-colors ${
+                location.pathname === link.to 
+                  ? "text-saffron" 
+                  : "text-secondary-text hover:text-antique-gold"
               }`}
             >
               {link.label}
@@ -38,7 +40,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-foreground"
+          className="md:hidden text-temple-brown"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -47,15 +49,17 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden border-t border-gold-subtle bg-background/95 backdrop-blur-md">
+        <div className="md:hidden border-t border-gold-subtle">
           <div className="flex flex-col px-6 py-4 gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
                 onClick={() => setIsOpen(false)}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                className={`text-sm font-medium transition-colors ${
+                  location.pathname === link.to 
+                    ? "text-saffron" 
+                    : "text-secondary-text hover:text-antique-gold"
                 }`}
               >
                 {link.label}

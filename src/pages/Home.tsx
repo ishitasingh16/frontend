@@ -33,18 +33,18 @@ const Home = () => {
       <Hero />
 
       {/* Dance Forms Section */}
-      <section className="py-24">
+      <section className="bg-main-bg">
         <div className="container mx-auto px-6">
-          <div className="mb-12 text-center">
-            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+          <div className="mb-16 text-center">
+            <h2 className="text-primary-text">
               Explore Dance Forms
             </h2>
-            <p className="mt-3 text-muted-foreground">
+            <p className="mt-3 text-secondary-text text-lg">
               Discover the rich traditions of Indian classical dance
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {dances.map((dance, i) => (
               <DanceCard key={dance.id} dance={dance} index={i} />
             ))}
@@ -53,18 +53,18 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="border-t border-gold-subtle py-24">
+      <section className="bg-section-bg">
         <div className="container mx-auto px-6">
-          <div className="mb-12 text-center">
-            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+          <div className="mb-16 text-center">
+            <h2 className="text-primary-text">
               Platform Features
             </h2>
-            <p className="mt-3 text-muted-foreground">
+            <p className="mt-3 text-secondary-text text-lg">
               Tools and experiences designed for cultural exploration
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((feature, i) => (
               <FeatureCard key={feature.title} {...feature} index={i} />
             ))}

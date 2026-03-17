@@ -15,13 +15,17 @@ const FeatureCard = ({ icon: Icon, title, description, index = 0 }: FeatureCardP
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="rounded-xl border border-gold-subtle bg-card p-6 transition-all hover-gold-glow"
+      className="feature-card rounded-lg p-6"
     >
-      <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3">
-        <Icon className="h-6 w-6 text-primary" />
+      <div className="feature-icon mb-4">
+        <Icon className="h-6 w-6" />
       </div>
-      <h3 className="font-display text-lg font-semibold text-foreground">{title}</h3>
-      <p className="mt-2 text-sm text-muted-foreground">{description}</p>
+      <h3 className="font-display text-lg font-semibold text-primary-text mb-2">
+        {title}
+      </h3>
+      <p className="text-sm text-secondary-text">
+        {description}
+      </p>
     </motion.div>
   );
 };
